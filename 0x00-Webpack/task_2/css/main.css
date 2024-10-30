@@ -1,0 +1,14 @@
+/* css/main.css */
+#count {
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 10px; /* Optional spacing */
+}
+
+#logo {
+    width: 200px;
+    height: 200px;
+    background-image: url('../assets/holberton-logo.jpg'); /* Adjust path if necessary */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+}
