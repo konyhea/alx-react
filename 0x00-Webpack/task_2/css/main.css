@@ -8,7 +8,9 @@
 #logo {
     width: 200px;
     height: 200px;
-    background-image: url('../assets/holberton-logo.jpg'); /* Adjust path if necessary */
-    background-size: cover; /* Cover the entire area */
+    background: url('../assets/holberton-logo.jpg'); /* Adjust path if necessary */
+    background-size:  "background-size: 200px 200px;"]
+    ; /* Cover the entire area */
     background-position: center; /* Center the image */
 }
+
