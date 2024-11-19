@@ -1,5 +1,5 @@
 import React from 'react';
-import './Notification.css';
+import './Notifications.css';
 
 // Define and export the Notifications component
 function Notifications() {

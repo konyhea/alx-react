@@ -1,26 +1,9 @@
-import React from 'react';
-import holberton from './Holberton_Logo.jpg';
-import { getFullYear, getFooterCopy } from './utils';
-import './App.css';
-
-function App() {
-  return (
-    <>
-      {/* Header Section */}
-      <header className="App-header">
-        <img src={holberton} alt="Holberton logo" />
-        <h1>School dashboard</h1>
-      </header>
-
-      {/* Login Section */}
-      <p className="loginText">Login to access the full dashboard</p>
-
-      {/* Footer Section */}
-      <footer className="App-footer">
-        <p>&copy; {getFullYear()} - {getFooterCopy(true)}</p>
-      </footer>
-    </>
-  );
+// Function to return the current year
+export function getFullYear() {
+  return new Date().getFullYear();
 }
 
-export default App;
+// Function to return footer text based on the isIndex parameter
+export function getFooterCopy(isIndex) {
+  return isIndex ? 'Holberton School' : 'Holberton School main dashboard';
+}
