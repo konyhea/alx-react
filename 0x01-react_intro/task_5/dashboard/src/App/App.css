@@ -1,0 +1,137 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+
+/*  styling the header 
+ */
+
+ .App-header {
+  margin: 1rem;
+  display: flex;
+ }
+
+
+ .App-header::after {
+  display: inline-block;
+  content: "";
+  border-bottom: .2rem solid #df354b;
+  width: 95%;
+  /* margin: 0 1rem; */
+  position: absolute;
+  bottom: 17rem;
+ }
+
+
+ .App-header img {
+  width: 100px;
+  margin: 2rem;
+ }
+
+ .App-header h1 {
+  font-size: 1.4rem;
+  font-family: "Space Grotesk", sans-serif;
+  color: #df354b;
+  /* color: red; */
+  align-self: center;
+ }
+
+
+
+
+
+/*  styling the footer
+ */
+.App-footer {
+  position: fixed;
+  bottom: 0;
+  font-size: .9rem;
+  font-style: italic;
+  font-family: "Space Grotesk", sans-serif;
+  
+  width: 100%;
+}
+
+
+.App-footer p {
+  text-align: center;
+}
+
+
+
+.App-footer::before {
+  display: inline-block;
+  content: "";
+  border-bottom: .2rem solid #df354b;
+  width: 95%;
+  /* margin: 0 1rem; */
+  position: absolute;
+  bottom: 30px;
+  margin-left: 12px;
+ }
+
+.loginText {
+  font-size: .8rem;
+  font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 1rem;
+
+}
+
+
+.container {
+  margin: 2.5rem;
+}
+
+input {
+  height: 1rem;
+  margin-right: .5rem
+}
+
+button {
+  height: 1rem;
+  font-size: .5rem;
+}
