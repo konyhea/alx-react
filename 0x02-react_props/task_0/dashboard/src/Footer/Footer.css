@@ -1,0 +1,29 @@
+/*  styling the footer
+ */
+.App-footer {
+    position: fixed;
+    bottom: 0;
+    font-size: .9rem;
+    font-style: italic;
+    font-family: "Space Grotesk", sans-serif;
+
+    width: 100%;
+}
+
+
+.App-footer p {
+    text-align: center;
+}
+
+
+
+.App-footer::before {
+    display: inline-block;
+    content: "";
+    border-bottom: .2rem solid #df354b;
+    width: 95%;
+    /* margin: 0 1rem; */
+    position: absolute;
+    bottom: 30px;
+    margin-left: 12px;
+}
