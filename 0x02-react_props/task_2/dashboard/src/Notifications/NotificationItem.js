@@ -1,10 +1,10 @@
 import React from "react";
 
 // NotificationItem component
-const NotificationItem = ({ type, html, value }) => {
+const NotificationItem = ({ type, value, html }) => {
   return (
     <li data-notification-type={type} dangerouslySetInnerHTML={html}>
-      {!html && value}
+      {value}
     </li>
   );
 };
