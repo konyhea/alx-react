@@ -1,0 +1,28 @@
+.Notifications {
+    border: 2px dashed red;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+  }
+  
+  [data-priority="default"] {
+    color: blue;
+  }
+  
+  [data-priority="urgent"] {
+    color: red;
+  }
+  
+  [data-notification-type="default"] {
+    color: blue;
+  }
+  [data-notification-type="urgent"] {
+    /* color: green; */
+    color: red;
+
+  }
+
+  li:last-child {
+    color: red;
+    /* font-style: italic; */
+    }
