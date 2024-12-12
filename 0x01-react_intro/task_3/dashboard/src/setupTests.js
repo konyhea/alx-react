@@ -1,11 +1,15 @@
-// jest-dom adds custom jest matchers for asserting on DOM nodes.
-// allows you to do things like:
-// expect(element).toHaveTextContent(/react/i)
-// learn more: https://github.com/testing-library/jest-dom
-import '@testing-library/jest-dom';
-import Enzyme, { configure, shallow, mount, render } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+// Mock ReadableStream globally for Node.js environment
+global.ReadableStream = require('stream').Readable;
 
-configure({ adapter: new Adapter() });
-export { shallow, mount, render };
-export default Enzyme;
+// Ensure fetch is polyfilled using undici or node-fetch
+import { fetch } from 'undici';  // or 'node-fetch' if you're using it
+global.fetch = fetch;
+
+// Jest-DOM and Enzyme setup
+import '@testing-library/jest-dom';
+// Importing the necessary packages
+import Enzyme from 'enzyme';
+import Adapter from 'enzyme-adapter-react-18';
+
+// Configuring enzyme to use the adapter
+Enzyme.configure({ adapter: new Adapter() });
