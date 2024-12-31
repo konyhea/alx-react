@@ -1,0 +1,34 @@
+/* STYLING THE NOTIFICATIONS TAGS */
+
+
+.Notification {
+    border: 2px dashed red;
+    /* padding: 20px; */
+    margin: 10px;
+    position: absolute;
+    right: 0;
+    max-height: 15vh;
+}
+
+/* STYLING THE UNORDERED LIST */
+ul {
+    list-style: disc;
+    margin: 2rem;
+}
+
+[data-notification-type= 'default'] {
+    color: blue;
+}
+[data-notification-type= 'urgent'] {
+    color: red;
+}
+
+li:last-child {
+    color: red;
+}
+
+/* STYLING THE YOUR NOTIFICATION TEXT */
+.menuItem {
+    text-align: right;
+    margin: 10px;
+}

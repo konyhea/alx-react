@@ -1,0 +1,19 @@
+/* STYLING THE INNER TEXT */
+
+.App-body {
+    margin: 2rem;
+    padding: 1rem;
+    text-align: left;
+    font-size: 1rem;
+}
+
+
+.App-body p {
+    margin-bottom: 1rem;
+}
+
+
+/* STYLING THE LABEL TAGS */
+label, input {
+    margin-right: 1rem;
+}

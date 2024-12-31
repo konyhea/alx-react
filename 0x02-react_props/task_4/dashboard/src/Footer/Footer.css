@@ -1,0 +1,21 @@
+/* STYLING THE FOOTER  */
+footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    font-style: italic;
+
+}
+
+footer::before {
+    content: '';
+    width:  98%;
+    height: 3px;
+    display: block;
+    background-color: #D70040;
+    position: absolute;
+    top: -16px;
+    margin-left: 12px;
+}
