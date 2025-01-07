@@ -1,0 +1,25 @@
+
+/* STYLING THE TABLE */
+table {
+    width: 100%;
+    border: 1px solid gainsboro;
+}
+/* STYLING THE THEAD */
+th {
+    padding: 5px;
+    margin: 1px;
+}
+
+
+thead {
+    font-weight: bold;
+    text-align: left;
+}
+
+thead tr {
+    border-bottom: 2px solid ghostwhite;
+}
+
+thead tr:first-child {
+    text-align: center;
+}

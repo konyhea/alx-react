@@ -1,0 +1,36 @@
+
+
+/* STYLING THE HOLBERTON LOGO */
+img {
+    width: 10%;
+}
+
+/* STYLING THE HEADER TITLE */
+
+.App-header h1 {
+    color: #D70040;
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+
+/* STYLING THE HEADER CONTAINER */
+
+.App-header{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 1rem;
+}
+
+/* STYLING A HORIZONTAL BOTTOM */
+
+header::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    display: block;
+    background-color: #D70040;
+    position: absolute;
+    bottom: -10px;
+}
