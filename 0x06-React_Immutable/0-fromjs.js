@@ -1,5 +1,4 @@
-import {fromJS} from 'immutable';
-
+import { fromJS } from 'immutable';
 
 /**
  * Converts a plain JavaScript object into an Immutable.js Map.
@@ -8,5 +7,5 @@ import {fromJS} from 'immutable';
  */
 
 export function getImmutableObject(object) {
-	return fromJS(object);
+		return fromJS(object);
 }
