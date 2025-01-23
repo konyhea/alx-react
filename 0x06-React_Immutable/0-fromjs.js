@@ -6,6 +6,6 @@ import { fromJS } from 'immutable';
  * @returns {Map} - Immutable.js Map representation of the object.
  */
 
-export function getImmutableObject(object) {
-		return fromJS(object);
+export default function getImmutableObject(object) {
+  return fromJS(object);
 }

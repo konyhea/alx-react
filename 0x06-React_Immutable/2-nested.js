@@ -1,4 +1,4 @@
-import {getIn} from 'immutable';
+import { getIn } from 'immutable';
 
 /**
  * get the value from an object using getIn.
@@ -6,9 +6,6 @@ import {getIn} from 'immutable';
  * @returns value from an object
  */
 
-
 export default function accessImmutableObject(object, array) {
-        return getIn([object, array]);
+  return getIn([object, array]);
 }
-
-ChatGPT

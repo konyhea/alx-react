@@ -12,7 +12,5 @@ export const map = Map({
 
 // Modify map to create map2 with the specified changes
 export const map2 = map
-  .set(2, 'Benjamin')  // Modify the value for index 2 to 'Benjamin'
-  .set(4, 'Oliver');   // Modify the value for index 4 to 'Oliver'
-
-
+  .set(2, 'Benjamin')
+  .set(4, 'Oliver');
