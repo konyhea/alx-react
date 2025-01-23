@@ -10,7 +10,7 @@ export const map = Map({
   6: 'Lucas',
 });
 
-// Modify map to create map2 with the specified changes
-export const map2 = map
-  .set(2, 'Benjamin')
-  .set(4, 'Oliver');
+// Use withMutations to apply the changes before returning
+export const map2 = map.withMutations((tempMap) => {
+  tempMap.set(2, 'Benjamin').set(4, 'Oliver');
+});

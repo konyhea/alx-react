@@ -1,11 +1,12 @@
-import { getIn } from 'immutable';
+import { fromJS, getIn } from 'immutable';
 
 /**
- * get the value from an object using getIn.
+ * Get the value from an object using getIn.
  * @param {Object} object - The plain JavaScript object.
- * @returns value from an object
+ * @param {Array} array - An array of keys representing the path to the value.
+ * @returns The value from the object at the specified path, or undefined 
  */
-
 export default function accessImmutableObject(object, array) {
-  return getIn([object, array]);
+  const immutableObject = fromJS(object); // Convert plain JavaScript object to Immutable object
+  return getIn(immutableObject, array); // Use getIn to retrieve the value
 }
